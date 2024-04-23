@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background: linear-gradient(to right, rgb(238, 156, 167), rgb(255, 221, 225));
+}
+
+.container {
+  padding: 2rem;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.4rem;
+}
+#choose-date {
+  display: flex;
+  background-color: black;
+  margin-top: 6rem;
+  align-items: center;
+  justify-content: space-between;
+  height: 7rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+#form {
+  height: 3rem;
+  margin-left: 2rem;
+  border-radius: 8px;
+  border: none;
+  width: 60%;
+  padding: 1rem;
+}
+
+#btn {
+  height: 3rem;
+  margin-right: 2rem;
+  border: none;
+  border-radius: 8px;
+  width: 20%;
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#btn:hover {
+  color: #ffffff;
+  background-color: rgb(83, 81, 79);
+}
+
+.show {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 7rem;
+}
+
+.show .data {
+  background-color: black;
+  color: white;
+  width: 20%;
+  height: 5rem;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 400;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.show .data p {
+  margin-top: 0.5rem;
+}
+
+@media only screen and (max-width: 550px) {
+    body{
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+    }
+    /* .container{
+        width: 400px;
+    } */
+   #choose-date{
+    flex-direction: column;
+    height: 10rem;
+    text-align: center;
+   }
+
+   #form{
+    margin-top: 1rem;
+    width: 75%;
+    margin-left: 0;
+   }
+   #btn{
+    font-size: 1.1rem;
+    width: 40%;
+    margin-bottom: 1rem;
+    margin-right: 0;
+   }
+
+   .show{
+        gap: 4rem;
+        /* text-align: left; */
+   }
+   .show .data{
+        font-size: 13px;
+   }
+   h1{
+    font-size: 2rem;
+   }
+  }
